@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="task.css"/>
+</head>
+<body>
+    <!--Build forms with various input fields.-->
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+  <hr>
+  <!--Build layouts that adapt to different screen sizes.-->
+  <div class="anish">
+
+     <header>
+    <nav class="navbar">
+      <div class="logo">MySite</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+    <aside class="sidebar">Sidebar</aside>
+    <section class="content">Main Content</section>
+  </main>
+
+  <footer>
+    <p>&copy; All rights reserved.</p>
+  </footer>
+</div>
+<!-- Create a to-do list or image gallery where users can add and remove tasks-->
+<div class="gallery-form">
+    <input type="text" id="imageURL" placeholder="Paste image URL here">
+    <button onclick="addImage()">Add Image</button>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  
+  
+    <script src="task.js"></script>
+</body>
+</html>
